@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#362E2E"
+
+    >
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/android1"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/pic"
+        android:layout_width="246dp"
+        android:layout_height="130dp"
+        android:layout_below="@id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-86dp"
+
+        android:src="@drawable/mypic" />
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pic"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+       android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="200dp">
+
+        <ImageView
+            android:id="@+id/git"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/gt" />
+
+        <ImageView
+            android:id="@+id/google"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/googlr" />
+
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/f" />
+
+        <ImageView
+            android:id="@+id/dribble"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+
+            android:src="@drawable/dribble" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l2"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/skype"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/skype" />
+
+        <ImageView
+            android:id="@+id/slack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/slack" />
+
+        <ImageView
+            android:id="@+id/android"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/android" />
+
+        <ImageView
+            android:id="@+id/whtsp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+
+            android:src="@drawable/whatsapp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/l4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l3"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/twitter"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/twitter" />
+
+        <ImageView
+            android:id="@+id/instagram"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/instagram" />
+
+        <ImageView
+            android:id="@+id/mail"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/mail" />
+
+        <ImageView
+            android:id="@+id/youtube"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="30dp"
+
+            android:src="@drawable/youtube" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="212dp"
+        android:text="  Tajudeen Wariz"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="252dp"
+        android:text="Mobile Developer"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="278dp"
+        android:text="Im warmed of mobile technologies"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+
+        android:layout_marginTop="299dp"
+        android:text="ideas marker, curious nature and lover"
+        android:textColor="#FFFFFF" />
+
+
+</RelativeLayout>
