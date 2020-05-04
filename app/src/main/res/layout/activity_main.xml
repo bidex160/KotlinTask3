@@ -5,16 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#362E2E"
+    android:background="@color/colorAccent"
 
     >
 
 
     <ImageView
+        android:layout_marginStart="0dp"
         android:id="@+id/img"
+        android:layout_marginTop="0dp"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:src="@drawable/android1"/>
+        android:src="@drawable/android1"
+        android:layout_marginLeft="0dp" />
 
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -36,7 +39,7 @@
         android:layout_centerInParent="true"
        android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:layout_marginTop="200dp">
+        android:layout_marginTop="180dp">
 
         <ImageView
             android:id="@+id/git"
@@ -118,7 +121,7 @@
         android:orientation="horizontal"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="20dp">
 
         <ImageView
             android:id="@+id/twitter"
@@ -151,6 +154,47 @@
 
 
     </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l4"
+        android:orientation="vertical"
+
+        >
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:text="Login Details"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:text="TextView" />
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:text="TextView" />
+
+
+
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView"
@@ -161,7 +205,7 @@
 
         android:layout_marginTop="212dp"
         android:text="  Tajudeen Wariz"
-        android:textColor="#FFFFFF"
+        android:textColor="@android:color/black"
         android:textSize="22sp"
         android:textStyle="bold" />
 
@@ -174,7 +218,7 @@
 
         android:layout_marginTop="252dp"
         android:text="Mobile Developer"
-        android:textColor="#FFFFFF" />
+        android:textColor="@android:color/black"/>
 
     <TextView
         android:id="@+id/textView3"
@@ -184,7 +228,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="278dp"
         android:text="Im warmed of mobile technologies"
-        android:textColor="#FFFFFF" />
+        android:textColor="@android:color/black" />
 
     <TextView
         android:id="@+id/textView4"
@@ -197,7 +241,9 @@
 
         android:layout_marginTop="299dp"
         android:text="ideas marker, curious nature and lover"
-        android:textColor="#FFFFFF" />
+        android:textColor="@android:color/black" />
+
+
 
 
 </RelativeLayout>

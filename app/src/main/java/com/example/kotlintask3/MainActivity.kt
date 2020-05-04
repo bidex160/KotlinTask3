@@ -10,6 +10,8 @@ import android.util.AttributeSet
 import android.util.Log
 import android.view.View
 import android.widget.ImageView
+import android.widget.TextView
+import com.google.android.material.snackbar.Snackbar
 import java.lang.Exception
 import kotlin.math.log
 
@@ -32,7 +34,29 @@ class MainActivity : AppCompatActivity() {
         val dribble:ImageView = findViewById(R.id.dribble)
         val facebook:ImageView = findViewById(R.id.facebook)
         val git:ImageView = findViewById(R.id.git)
+        val txtname:TextView = findViewById(R.id.textView12)
+        val txtpass:TextView = findViewById(R.id.textView13)
+
+
+           val view:View = findViewById(R.id.dribble)
+
+
+        //Snackbar.make(this, "" ,Snackbar.LENGTH_INDEFINITE)
+        try {
+            val intent:Intent = intent
+            val name:String = intent.getStringExtra("username")
+            val email:String = intent.getStringExtra("password")
+
+            txtname.text = "Username:-\t $name"
+            txtpass.text = "Password:- \t $email"
+            Log.d(TAG, "onCreate" + name)
+        }catch (e:Exception){
+
+        }
+
+        
         git.setOnClickListener {
+
             try {
 
 
@@ -155,12 +179,14 @@ class MainActivity : AppCompatActivity() {
         whatsapp.setOnClickListener {
 
             try {
-                val whatintent = packageManager.getLaunchIntentForPackage("com.whatsapp")
+                val whatintent = Intent(Intent.ACTION_VIEW, Uri.parse("http://wa.me/2347015351040"))
+                whatintent.setPackage("com.WhatsApp.android")
 
-                if (whatintent != null) {
+                if (whatintent.resolveActivity(packageManager) != null) {
                         startActivity(whatintent)
                 }else{
-                    startActivity(Intent.createChooser(whatintent, "whatsaapp"))
+
+                    startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("http://wa.me/2347015351040")))
                 }
 
 
